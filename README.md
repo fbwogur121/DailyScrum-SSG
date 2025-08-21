@@ -25,18 +25,21 @@ scrum/
 │   ├── default.html    # 기본 레이아웃
 │   └── scrum.html      # 스크럼 전용 레이아웃
 └── _posts/             # 스크럼 마크다운 파일들
-    ├── 2024-01-15-예시-프로젝트-진행상황.md
-    ├── 2024-01-16-신민혁-백엔드개발.md
-    ├── 2024-01-16-고윤아-디자인작업.md
-    └── 2024-01-17-김병곤-취준활동.md
+    ├── 2025-08-20-예시-프로젝트-진행상황.md
+    ├── 2025-08-21-김도윤-백엔드개발.md
+    ├── 2025-08-21-주장우-프로젝트정리.md
+    ├── 2025-08-21-전예원-운영체제공부.md
+    └── 2025-08-21-류재혁-취준활동.md
 ```
 
 ## 📝 새 스크럼 작성하기
 
 ### 1. 템플릿 복사
+
 `template.md` 파일을 복사해서 시작하세요.
 
 ### 2. 파일명 규칙 (중요!)
+
 Jekyll에서는 `_posts` 폴더에 특정 형식으로 파일을 저장해야 합니다:
 
 ```
@@ -44,50 +47,54 @@ _posts/YYYY-MM-DD-작성자명-제목.md
 ```
 
 **예시:**
-- `_posts/2024-01-15-신민혁-백엔드개발.md`
-- `_posts/2024-01-16-고윤아-UI디자인.md`
-- `_posts/2024-01-17-김병곤-취준활동.md`
+
+- `_posts/2025-08-21-전예원-운영체제공부.md`
+- `_posts/2025-08-21-주장우-프로젝트정리.md`
 
 ### 3. Front Matter 설정
+
 파일 맨 위에 다음과 같은 메타데이터를 설정하세요:
 
 ```yaml
 ---
 layout: scrum
 title: "프로젝트 진행상황"
-date: 2024-01-15
-author: "신민혁"
+date: 2025-09-01
+author: "류재혁"
 categories: [scrum]
-project: "쇼핑몰 프로젝트"
+project: "북마켓 프로젝트"
 category: "백엔드"
 ---
 ```
 
 ### 4. 마크다운 작성
+
 HTML 대신 마크다운으로 편리하게 작성:
 
-```markdown
+````markdown
 ## 📝 오늘 한 일
 
-- [x] 로그인 API 구현
-- [x] JWT 토큰 시스템 구축
+- [x] 운영체제 및 네트워크 공부
+- [x] Delete 로직 작성
 - [ ] 테스트 코드 작성
 
 ### 상세 내용
 
-오늘은 인증 시스템을 구현했습니다...
+오늘은 게시물 삭제(Delete) 로직을 작성했습니다...
 
-```python
-def authenticate_user(email, password):
-    # 인증 로직
-    return token
+```java
+public static void delete(int num) {
+    # 삭제 로직
+}
 ```
+````
 
 ## 🎯 내일 할 일
 
-- [ ] 상품 CRUD API 구현
-- [ ] 데이터베이스 최적화
-```
+- [ ] 북마켓 CLI 기능 구현
+- [ ] (개인 공부 내용)
+
+````
 
 ### 5. GitHub 업로드
 1. `_posts/` 폴더에 마크다운 파일 저장
@@ -112,9 +119,10 @@ bundle install
 bundle exec jekyll serve
 
 # http://localhost:4000 접속
-```
+````
 
 ### GitHub Pages 환경
+
 1. 리포지토리를 GitHub Pages로 배포
 2. `https://username.github.io/repo-name/scrum/` 접속
 3. 마크다운 파일이 자동으로 HTML로 변환되어 표시
@@ -141,35 +149,38 @@ bundle exec jekyll serve
 ## 🔧 커스터마이징
 
 ### 팀원 추가/변경
+
 `_config.yml`의 `team_members` 섹션을 수정하세요:
 
 ```yaml
 team_members:
-  - name: "신민혁"
-    folder: "신민혁"
+  - name: "주장우"
+    folder: "주장우"
   - name: "새팀원"
     folder: "새팀원"
 ```
 
 ### 레이아웃 변경
+
 - `_layouts/default.html`: 전체 페이지 레이아웃
 - `_layouts/scrum.html`: 스크럼 포스트 레이아웃
 - `index.html`: 메인 게시판 페이지
 
 ## 🎨 Jekyll vs 기존 HTML 방식 비교
 
-| 기능 | 기존 HTML | Jekyll 마크다운 |
-|------|-----------|----------------|
-| 작성 방식 | HTML 태그 | 마크다운 문법 |
-| 파일 관리 | 개인별 폴더 | `_posts/` 통합 |
-| 메타데이터 | HTML 내부 | Front Matter |
-| 자동화 | GitHub Actions | GitHub Pages |
-| 빌드 시간 | 즉시 | 1-2분 |
-| 편의성 | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| 기능       | 기존 HTML      | Jekyll 마크다운 |
+| ---------- | -------------- | --------------- |
+| 작성 방식  | HTML 태그      | 마크다운 문법   |
+| 파일 관리  | 개인별 폴더    | `_posts/` 통합  |
+| 메타데이터 | HTML 내부      | Front Matter    |
+| 자동화     | GitHub Actions | GitHub Pages    |
+| 빌드 시간  | 즉시           | 1-2분           |
+| 편의성     | ⭐⭐⭐         | ⭐⭐⭐⭐⭐      |
 
 ## 🐛 문제 해결
 
 ### 스크럼이 안 보일 때
+
 1. 파일명이 `YYYY-MM-DD-작성자명-제목.md` 형식인지 확인
 2. `_posts/` 폴더 루트에 있는지 확인 (하위 폴더 X)
 3. Front Matter가 올바른지 확인
@@ -179,11 +190,13 @@ team_members:
 7. GitHub Pages 빌드 상태 확인
 
 ### GitHub Pages 빌드 실패
+
 - Repository Settings > Pages에서 빌드 로그 확인
 - Jekyll 문법 오류가 있는지 확인
 - `_config.yml` 설정 확인
 
 ### 로컬에서 Jekyll 오류
+
 ```bash
 # 의존성 업데이트
 bundle update
