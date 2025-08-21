@@ -1,8 +1,8 @@
 ---
 layout: scrum
 title: "DailyScrum"
-date: 2024-01-15  # YYYY-MM-DD 형식 (파일명과 일치해야 함)
-author: "작성자명"  # 본인 이름으로 변경 (신민혁, 고윤아, 김병곤, 김선민, 최문규)
+date: 2025-08-21  # YYYY-MM-DD 형식 (파일명과 일치해야 함)
+author: "작성자명"  # 본인 이름으로 변경 (주장우, 김도윤, 류재혁, 전예원)
 categories: [scrum]
 ---
 
