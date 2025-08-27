@@ -18,5 +18,5 @@ categories: [scrum]
 - 점점 어려워지는 느낌..?
 
 ## 🔗 공유하고 싶은 것
-- Velog
+- Velog 오늘의 포스팅
 https://velog.io/@fbwogur121/JAVA-17.-IO-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%8A%A4%ED%8A%B8%EB%A6%BC1-25.08.25
