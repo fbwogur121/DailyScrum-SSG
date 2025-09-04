@@ -19,5 +19,6 @@ categories: [scrum]
 - 자바할때보단 쉬운느낌?
 
 ## 🔗 공유하고 싶은 것
-- Velog 오늘의 포스팅 : https://velog.io/@fbwogur121/DataBase-%EC%8A%A4%ED%82%A4%EB%A7%88-ERD-%EC%84%A4%EA%B3%84-25.09.02
+- Velog 오늘의 포스팅 : 
+- https://velog.io/@fbwogur121/DataBase-%EC%8A%A4%ED%82%A4%EB%A7%88-ERD-%EC%84%A4%EA%B3%84-25.09.02
 - 백준허브 사용해보셨나요?
