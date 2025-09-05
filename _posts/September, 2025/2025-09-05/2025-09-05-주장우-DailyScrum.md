@@ -11,6 +11,7 @@ categories: [scrum]
 - 집 컴퓨터 세팅
 - 프로그래머스 SQL문 select 문제 다 품
 - 네트워크 강의 시청
+- database 연동 복습
 
 ## 🎯 내일 할 일
 
